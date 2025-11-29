@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .main {
+            background-image: url("Rasm.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body class="bg-[#181818] flex justify-center items-center flex-col">
+
+    <main class="w-[1081px] h-[595px] main">
+
+        <header class="h-[103px] ml-[20px] mx-auto">
+            <ul class="flex items-center justify-between pt-4">
+                <li>
+                    <input type="text" id="inp" class="w-[336px] h-[36px] rounded-[10px] bg-[#1F1F1F] text-white "
+                        placeholder="Search music ">
+                </li>
+
+                <li><a href="" class="text-white">About Us</a></li>
+                <li><a href="" class="text-white">Contact</a></li>
+                <li><a href="" class="text-white">Premium</a></li>
+
+                <li>
+                    <div class="flex items-center gap-4 mr-[20px]">
+                        <button class="w-[162px] h-[36px] cursor-pointer border border-[#EE10B0] text-[#EE10B0] rounded-[4px]">Login</button>
+                        <button class="w-[162px] h-[36px] cursor-pointer bg-[#EE10B0] text-white rounded-[4px]">Sign up</button>
+                    </div>
+                </li>
+            </ul>
+        </header>
+
+        <section class="h-[103px] ml-[20px] mx-auto">
+            <div class="w-[352px] h-[314px] pt-[50px]">
+                <h1 class="text-white text-[40px]">
+                    All the 
+                    <span class="text-[#EE10B0]">Best Songs</span>
+                    in One Place
+                </h1>
+
+                <p class="text-white text-[15px]">
+                    On our website, you can access an amazing collection of popular and new songs.
+                    Stream your favorite tracks in high quality and enjoy without interruptions.
+                </p>
+
+                <div class="flex items-center gap-5 mt-5">
+                    <button class="w-[162px] h-[36px] bg-[#EE10B0] text-white rounded-[4px]">Discover</button>
+                    <button class="w-[162px] h-[36px] border border-[#0E9EEF] text-[#0E9EEF] rounded-[4px]">Create playlist</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="w-[1080px] h-[1000px] bg-black">
+        <table class="w-[900px] mx-auto text-left" id="music">
+            <tr>
+                <th class="text-white py-3">Nomi</th>
+                <th class="text-white py-3">Rasmi</th>
+                <th class="text-white py-3">vaqti</th>
+               
+                <th class="text-white py-3">Qo‘shiq</th>
+                <th class="text-white py-3">Video</th>
+            </tr>
+        </table>
+    </section>
+
+
+    <script type="module" class="" src="full1.js"></script>
+
+</body>
+</html>
