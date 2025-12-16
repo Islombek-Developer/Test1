@@ -16,7 +16,7 @@ function alldata(filteredSongs){
             <td class="text-white text-lg">${item.title}</td>
     
             <td class="flex justify-center">
-            <a href="./singlr.html?card-id=${item.id}">
+            <a href="../html/singlr.html?card-id=${item.id}">
             <img 
             class="music-img w-[80px] h-[80px] rounded-[50%] object-cover cursor-pointer" 
             src="${item.cover}" 
@@ -39,7 +39,6 @@ function alldata(filteredSongs){
         `;
     
         musicTable.appendChild(tr);
-    
     });
     addPlayEvents()
 }
@@ -52,7 +51,6 @@ inp.addEventListener("keyup",()=>{
     })
    alldata(filtered);
 })
-
 
 function addPlayEvents(){
     
@@ -101,7 +99,6 @@ if(currentBtn === button){
 
              musicImg.classList.add("spin-slow")
 
-
             }
              
         else{
@@ -121,21 +118,15 @@ if(currentBtn === button){
                         src: button.dataset.audio,
                         currentTime: currentAudio.currentTime
                     }));
-             
             }
             currentAudio.onended = () => {
                 button.innerHTML = "play";      
                 timeSpan.innerHTML = "00:00";   
              musicImg.classList.add("spin-slow")
 
-              
             };
-            
-       
         }
        
     })
-  
-   
 })
 }

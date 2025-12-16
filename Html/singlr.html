@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main class="w-[1076px] h-[522px] bg-linear-to-b from-black via-gray-600 to-white mx-auto">
+
+        <header class="w-[1043px] h-[60px] ml-[20px] flex items-center justify-between mx-auto">
+            <a href="../Html/index.html"><img src="../Img/back.png" alt=""></a>
+            <ul class="flex items-center justify-end gap-[20px]">
+                <li><a href="" class="text-white">Share</a></li>
+                <li><a href="" class="text-white">About</a></li>
+                <li><a href="" class="text-white">Premuim</a></li>
+                <li>
+                    <img src="../Img/user.png" alt="">
+                </li>
+            </ul> 
+        </header>
+        <section class="w-[900px] mx-auto flex items-center justify-between">
+            <img src="../Img/Rasm.jpg" id="singleImg" class="rounded-[15px] w-[360px] h-[230px]">
+            <div class="flex items-center justify-center flex-col">
+                <h1 id="singleTit">
+
+                </h1>
+                <strong id="single_artist">
+
+                </strong>
+                <div class="time">
+                    <samp id="currentTime">
+                        00:00
+                    </samp>
+                    <input type="range" value="0" min="0" max="100% " id="progress">
+                    <samp id="duration">
+                        00:00
+                    </samp>
+                </div>
+                <div class="singlebuttons">
+                    <button id="prev">⏪</button>
+                    <button id="play">⏯</button>
+                    <button id="next">⏩</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="../Js/singlr.js"></script>
+</body>
+</html>
